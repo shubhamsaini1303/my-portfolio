@@ -20,7 +20,7 @@ const projectsData = [
     name: "Task Management",
     description:
       "This Task Management System is built using React, Redux Toolkit, Framer Motion, and Tailwind CSS. It allows users to add, delete, and toggle tasks with smooth animations for an interactive experience",
-    technologies: ["React.js", "OTPVERIFICATION", "Node.js", "Express.js" , "MongoDB"],
+    technologies: ["React.js", "OTPVERIFICATION", "Node.js", "Express.js" , "MongoDB" ],
     link: "https://task-management-rho-lac.vercel.app/",
   },
   {
