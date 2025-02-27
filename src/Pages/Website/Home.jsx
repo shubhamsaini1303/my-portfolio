@@ -46,7 +46,7 @@ const Home = () => {
       <div className="flex justify-center gap-4 mt-6">
         {/* Resume Button */}
         <a
-          href="/My-Resume.pdf" // Update with actual resume file path
+          href="/Shubham Saini Resume.pdf" // Update with actual resume file path
           target="_blank"
           rel="noopener noreferrer"
           className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition"
