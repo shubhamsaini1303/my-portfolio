@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#review {
+    position: relative; /* Ensure the pseudo-element positions correctly */
+    background-image: url("/Images/rIgFCPu1UT9RSfM57qES2HcKsmc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden; /* To ensure the pseudo-element stays within bounds */
+}
+
+#review::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1; /* Place it above the background but below any content */
+}
+
+/* Ensure child elements are above the overlay */
+#review > * {
+    position: relative;
+    z-index: 2;
+}
+
+#dietlist {
+    position: relative; /* Ensure positioning for pseudo-element */
+    background-image: url("/Images/CjTKhc1hqRGghfDwFauIOmxorlk.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden; /* Ensure content stays within bounds */
+}
+
+#dietlist::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8; /* Set desired opacity */
+    z-index: 1; /* Ensure it stays on top of the background but below the content */
+    pointer-events: none; /* Ensure it doesn't interfere with interactions */
+}
+
+#dietlist > * {
+    position: relative;
+    z-index: 2; /* Ensure content stays above the overlay */
+}
+
+#workoutplan{
+    background-image: url("/Images/diet7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#dietform{
+    background-image: url("/Images/diet7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#workoutform{
+    background-image: url("/Images/WRmaXFrPEq17Lyab8nqbUFOL1O8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
